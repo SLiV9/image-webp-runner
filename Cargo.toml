@@ -4,8 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+clap = { version = "4.5.23", features = ["derive"] }
 image = { version = "0.25.5", default-features = false }
-image-webp = { path = "../image-webp" }
+image-webp-reference = { package = "image-webp", version = "0.2.0" }
+image-webp-custom = { package = "image-webp", path = "../image-webp" }
 
 [profile.dev]
 
